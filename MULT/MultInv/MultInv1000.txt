@@ -1,0 +1,25 @@
+Daikon version 5.8.18, released June 23, 2023; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+MultOp:::OBJECT
+===========================================================================
+MultOp.MultOp():::EXIT
+===========================================================================
+MultOp.mult(int, int):::ENTER
+y != 0
+===========================================================================
+MultOp.mult(int, int):::EXIT
+return % orig(y) == 0
+===========================================================================
+MultTest.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+MultTest.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
