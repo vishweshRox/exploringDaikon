@@ -1,0 +1,79 @@
+ALL TESTS PASS SUCCESSFULLY
+Daikon version 5.8.18, released June 23, 2023; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+BinarySearchOp:::OBJECT
+===========================================================================
+BinarySearchOp.BinarySearchOp():::EXIT
+===========================================================================
+BinarySearchOp.loop_dummy1(int, int, int, int):::ENTER
+l >= 0
+r != 0
+x one of { 7, 5894 }
+l <= arr_length
+r < arr_length
+===========================================================================
+BinarySearchOp.loop_dummy1(int, int, int, int):::EXIT
+===========================================================================
+BinarySearchOp.loop_dummy2(int, int, int, int, int):::ENTER
+l >= 0
+x one of { 7, 5894 }
+l < arr_length
+m < arr_length
+r < arr_length
+===========================================================================
+BinarySearchOp.loop_dummy2(int, int, int, int, int):::EXIT
+===========================================================================
+BinarySearchOp.search(int[], int):::ENTER
+arr != null
+arr[] elements >= 0
+arr[] sorted by <=
+x one of { 7, 5894 }
+size(arr[])-1 != 0
+===========================================================================
+BinarySearchOp.search(int[], int):::EXIT24
+orig(x) == arr[return]
+orig(x) == orig(arr[post(return)])
+orig(x) == 5894
+orig(x) >= arr[return-1]
+===========================================================================
+BinarySearchOp.search(int[], int):::EXIT55
+arr[] elements one of { 1, 3, 9 }
+arr[] one of { [], [1, 3, 9] }
+return == -1
+orig(x) == 7
+orig(size(arr[])) one of { 0, 3 }
+===========================================================================
+BinarySearchOp.search(int[], int):::EXIT
+arr[] == orig(arr[])
+(return == -1)  <==>  (orig(x) == 7)
+(return == -1)  ==>  (arr[] elements one of { 1, 3, 9 })
+(return == -1)  ==>  (arr[] one of { [], [1, 3, 9] })
+(return == -1)  ==>  (orig(size(arr[])) one of { 0, 3 })
+arr[] elements >= 0
+arr[] sorted by <=
+return != 0
+size(arr[])-1 != 0
+return <= size(arr[])-1
+===========================================================================
+BinarySearchTest.generateRandomArray():::EXIT
+return != null
+return[] elements >= 0
+===========================================================================
+BinarySearchTest.insertAndSort():::EXIT
+return != null
+return[] elements >= 0
+return[] sorted by <=
+===========================================================================
+BinarySearchTest.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+BinarySearchTest.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
