@@ -1,0 +1,28 @@
+Daikon version 5.8.18, released June 23, 2023; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+RemOp:::OBJECT
+===========================================================================
+RemOp.RemOp():::EXIT
+===========================================================================
+RemOp.rem(int, int):::ENTER
+===========================================================================
+RemOp.rem(int, int):::EXIT
+return != null
+return[] elements >= 0
+size(return[]) == 2
+return[] elements <= orig(x)
+return[] elements <= orig(y)
+===========================================================================
+RemTest.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+RemTest.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
