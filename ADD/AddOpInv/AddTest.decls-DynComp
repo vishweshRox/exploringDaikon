@@ -1,0 +1,411 @@
+// Declarations for AddTest
+// Declarations written 2024-04-06T17:16:11.738732 by daikon.DynComp
+
+decl-version 2.0
+var-comparability implicit
+
+ppt AddTest:::CLASS
+ppt-type class
+
+ppt AddTest:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type AddTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt AddTest.AddTest():::ENTER
+ppt-type enter
+
+ppt AddTest.AddTest():::EXIT2
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type AddTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt AddTest.Test0():::ENTER
+ppt-type enter
+
+ppt AddTest.Test0():::EXIT8
+ppt-type subexit
+
+ppt AddTest.Test1():::ENTER
+ppt-type enter
+
+ppt AddTest.Test1():::EXIT14
+ppt-type subexit
+
+ppt AddTest.Test2():::ENTER
+ppt-type enter
+
+ppt AddTest.Test2():::EXIT20
+ppt-type subexit
+
+ppt AddTest.Test3():::ENTER
+ppt-type enter
+
+ppt AddTest.Test3():::EXIT26
+ppt-type subexit
+
+ppt AddTest.Test4():::ENTER
+ppt-type enter
+
+ppt AddTest.Test4():::EXIT32
+ppt-type subexit
+
+ppt AddTest.Test5():::ENTER
+ppt-type enter
+
+ppt AddTest.Test5():::EXIT38
+ppt-type subexit
+
+ppt AddTest.Test6():::ENTER
+ppt-type enter
+
+ppt AddTest.Test6():::EXIT44
+ppt-type subexit
+
+ppt AddTest.Test7():::ENTER
+ppt-type enter
+
+ppt AddTest.Test7():::EXIT50
+ppt-type subexit
+
+ppt AddTest.Test8():::ENTER
+ppt-type enter
+
+ppt AddTest.Test8():::EXIT56
+ppt-type subexit
+
+ppt AddTest.Test9():::ENTER
+ppt-type enter
+
+ppt AddTest.Test9():::EXIT63
+ppt-type subexit
+
+ppt AddTest.Test10():::ENTER
+ppt-type enter
+
+ppt AddTest.Test10():::EXIT70
+ppt-type subexit
+
+ppt AddTest.main(java.lang.String[]):::ENTER
+ppt-type enter
+variable args
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable args.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args args
+  flags synthetic classname non_null
+  comparability 1
+variable args[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 3[5]
+variable args[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args args[]
+  flags synthetic to_string
+  comparability 4[6]
+
+ppt AddTest.main(java.lang.String[]):::EXIT76
+ppt-type subexit
+variable args
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable args.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args args
+  flags synthetic classname non_null
+  comparability 1
+variable args[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 3[5]
+variable args[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args args[]
+  flags synthetic to_string
+  comparability 4[6]
+
+ppt AddTest.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type AddTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt AddTest.equals(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type AddTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt AddTest.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type AddTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt AddTest.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type AddTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt AddOp:::CLASS
+ppt-type class
+
+ppt AddOp:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type AddOp
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt AddOp.AddOp():::ENTER
+ppt-type enter
+
+ppt AddOp.AddOp():::EXIT5
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type AddOp
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt AddOp.add(int, int):::ENTER
+ppt-type enter
+variable x
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 2
+variable y
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 3
+
+ppt AddOp.add(int, int):::EXIT28
+ppt-type subexit
+variable x
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 3
+variable y
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 4
+variable return
+  var-kind return
+  dec-type int
+  rep-type int
+  comparability 2
+
+ppt AddOp.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type AddOp
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt AddOp.equals(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type AddOp
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt AddOp.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type AddOp
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt AddOp.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type AddOp
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
