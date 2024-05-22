@@ -1,0 +1,26 @@
+Daikon version 5.8.18, released June 23, 2023; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+IntDivOp:::OBJECT
+===========================================================================
+IntDivOp.IntDivOp():::EXIT
+===========================================================================
+IntDivOp.div(int, int):::ENTER
+x != y
+===========================================================================
+IntDivOp.div(int, int):::EXIT
+return != orig(x)
+return != orig(y)
+===========================================================================
+IntDivTest.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+IntDivTest.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
