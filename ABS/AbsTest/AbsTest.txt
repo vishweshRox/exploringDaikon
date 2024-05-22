@@ -1,0 +1,26 @@
+Daikon version 5.8.18, released June 23, 2023; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+AbsOp:::OBJECT
+===========================================================================
+AbsOp.AbsOp():::EXIT
+===========================================================================
+AbsOp.abs(int):::ENTER
+===========================================================================
+AbsOp.abs(int):::EXIT
+orig(x) % return == 0
+return % orig(x) == 0
+return >= orig(x)
+===========================================================================
+AbsTest.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+AbsTest.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
