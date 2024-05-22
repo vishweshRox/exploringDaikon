@@ -1,0 +1,41 @@
+Daikon version 5.8.18, released June 23, 2023; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+SumArrayOp:::OBJECT
+===========================================================================
+SumArrayOp.SumArrayOp():::EXIT
+===========================================================================
+SumArrayOp.sum(int[]):::ENTER
+arr != null
+arr[] elements >= 0
+===========================================================================
+SumArrayOp.sum(int[]):::EXIT
+arr[] == orig(arr[])
+arr[] elements >= 0
+arr[] elements < return
+===========================================================================
+SumArrayTest.generateRandomArray():::EXIT
+return != null
+return[] elements >= 0
+===========================================================================
+SumArrayTest.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+SumArrayTest.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+===========================================================================
+SumArrayTest.sumArray(int[]):::ENTER
+array != null
+array[] elements >= 0
+===========================================================================
+SumArrayTest.sumArray(int[]):::EXIT
+array[] == orig(array[])
+array[] elements >= 0
+array[] elements < return
+Exiting Daikon.
